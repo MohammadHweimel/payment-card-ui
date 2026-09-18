@@ -16,13 +16,16 @@
             background-repeat: no-repeat;
             min-height: 100vh;
         }
-        .ADDCARD{
-            color:white;
-            background-color: #00ae4b;
 
-;
+        .ADDCARD {
+            color: white;
+            background-color: #00ae4b;
         }
 
+        .outline-label {
+            font-size: clamp(10px, 2.5vw, 11px);
+            line-height: 1;
+        }
     </style>
 
 </head>
@@ -30,78 +33,79 @@
 <body class="d-flex align-items-center ">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-11 col-sm-10 col-md-8 col-lg-6" style="max-width: 540px;">
                 <div class="card text-center rounded-3">
                     <div class="text-container">
-                        <h2 class="fw-bold pt-4">Settings</h2>
+                        <h2 class="fw-bold mt-5">Settings</h2>
                         <span>Payment</span>
                     </div>
 
-                    <div class="text-start p-5">
+                    <div class="text-start p-3 p-md-5">
                         <h6 class="fw-bold mb-3">Saved Card:</h6>
 
                         <div class="d-flex align-items-center gap-2 mb-3">
                             <i class="fa-brands fa-cc-mastercard fs-1"></i>
                             <div class="position-relative flex-grow-1">
-                                <input type="text" class="form-control" id="savedCard1" value="**** **** **** 3193 "
-                                    readonly>
+                                <input type="text" class="form-control py-2" id="savedCard1"
+                                    value="**** **** **** 3193 " readonly>
                                 <label for="savedCard1"
-                                    class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
+                                    class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
                                     Number</label>
                             </div>
-                            <a href="" class="small text-decoration-none text-nowrap fw-bold p-3"
+                            <a href="" class="small text-decoration-none text-nowrap fw-bold "
                                 style="color: #6f42c1">Remove card</a>
                         </div>
 
                         <div class="d-flex align-items-center gap-2 ">
                             <i class="fa-brands fa-cc-visa fs-1"></i>
                             <div class="position-relative flex-grow-1">
-                                <input type="text" class="form-control" id="savedCard2" value="**** **** **** 4296"
+                                <input type="text" class="form-control py-2" id="savedCard2" value="**** **** **** 4296"
                                     readonly>
                                 <label for="savedCard2"
-                                    class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
+                                    class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
                                     Number</label>
                             </div>
-                            <a href="" class="small text-decoration-none text-nowrap fw-bold p-3"
+                            <a href="" class="small text-decoration-none text-nowrap fw-bold "
                                 style="color: #6f42c1">Remove card</a>
                         </div>
 
-                        <dev>
-                            <h6 class="fw-bold mt-5 mb-4">Add new card:</h6>
+                        <div>
+                            <h6 class="fw-bold mt-4 mb-3">Add new card:</h6>
 
                             <div class="position-relative">
-                                <input type="text" class="form-control" id="cardName" placeholder="Mohammad hweimel">
+                                <input type="text" class="form-control py-2" id="cardName"
+                                    placeholder="Mohammad hweimel">
                                 <label for="cardName"
-                                    class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Cardholder`s
+                                    class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Cardholder`s
                                     Name</label>
                             </div>
 
 
-                            <div class="row g-2">
+                            <div class="row g-2 mt-2">
 
-                                <div class="position-relative col-6 mt-4">
-                                    <input type="text" class="form-control" id="cardNumber"
+                                <div class="position-relative col-6">
+                                    <input type="text" class="form-control py-2" id="cardNumber"
                                         placeholder="1234 5678 1234 5678">
                                     <label for="cardNumber"
-                                        class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
+                                        class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Card
                                         Number</label>
                                 </div>
 
-                                <div class="position-relative col-3  mt-4">
-                                    <input type="text" class="form-control text-center" id="Expire" placeholder="MM/YY"
-                                        maxlength="5" pattern="(0[1-9]|1[0-2])/([0-9]{2})">
+                                <div class="position-relative col-3 ">
+                                    <input type="text" class="form-control text-center py-2" id="Expire"
+                                        placeholder="MM/YY" maxlength="5" pattern="(0[1-9]|1[0-2])/([0-9]{2})">
                                     <label for="Expire"
-                                        class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Expire</label>
+                                        class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Expire</label>
                                 </div>
 
-                                <div class="position-relative col-3  mt-4">
-                                    <input type="password" class="form-control" id="Cvv" placeholder="***"
+                                <div class="position-relative col-3  ">
+                                    <input type="password" class="form-control py-2" id="Cvv" placeholder="***"
                                         maxlength="3">
                                     <label for="Cvv"
-                                        class="position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Cvv</label>
+                                        class="outline-label position-absolute top-0 start-0 translate-middle-y bg-white px-1 ms-3 text-muted">Cvv</label>
                                 </div>
                             </div>
-                        </dev>
+                        </div>
 
                         <button type="button" class="btn btn-success col-12 mt-3 ADDCARD ">ADD CARD</button>
 
